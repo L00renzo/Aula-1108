@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Contato - Xiaomi</title>
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="logo.png" alt="Xiaomi's Logo"></h1>
+
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos Xiaomi</a></li>
+						<li><a href="contato.html">Contate-nos</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<form>
+				<label for="nomesobrenome"> 👉 Nome e sobrenome:</label>
+				<input type="text" id="nomesobrenome" class="input-padrao" required>
+			
+				<label for="email"> 👉 Email:</label>
+				<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+				<label for="telefone"> 👉 Telefone:</label>
+				<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+				<label for="mensagem"> 👉 Mensagem:</label>
+				<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+				<fieldset>
+					<legend> 👉 Como prefere o nosso contato?</legend>
+					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+					
+					
+					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+				</fieldset>
+
+				<fieldset>
+					<legend> 👉 Em qual produto se interessou?</legend>
+					<select>
+							<option>REDMI NOTE 8</option>
+							<option>REDMI AIR DOTS</option>
+							<option>MI BAND 6</option>
+					</select>
+				</fieldset>
+
+				<label class="checkbox"><input type="checkbox" checked> Receber novidades e ofertas no Email.</label>
+
+				<input type="submit" value="Enviar formulário" class="enviar">
+			</form>
+
+			<table>
+				<tr>
+					<td>Dia</td>
+					<td>Horário</td>
+				</tr>
+				<tr>
+					<td>Segunda</td>
+					<td>8h ~ 18h</td>
+				</tr>
+				<tr>
+					<td>Terça</td>
+					<td>8h ~ 18h</td>
+				</tr>
+				<tr>
+					<td>Quarta</td>
+					<td>8h ~ 18h</td>
+
+				</tr>
+				<tr>
+					<td>Quinta</td>
+					<td>8h ~ 18h</td>
+				</tr>
+				<tr>
+					<td>Sexta</td>
+					<td>8h ~ 18h</td>
+				</tr>
+				<tr>
+					<td>Sábado</td>
+					<td>8h ~ 12h</td>
+					
+				</tr>
+			</table>
+		</main>
+
+		<footer>
+			<img src="logo.png" alt="Xiaomi's Logo">
+			<p class="copyright">&copy; Copyright Xiaomi - 2022</p>
+		</footer>
+	</body>
+</html>
